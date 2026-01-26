@@ -4,7 +4,7 @@
 class EpilogueTracker < Formula
   desc "User-centric work management CLI using the Screenplay Pattern"
   homepage "https://svetzal.github.io/epilogue-tracker/"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
