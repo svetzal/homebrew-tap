@@ -4,13 +4,13 @@
 class EpilogueTracker < Formula
   desc "User-centric work management CLI using the Screenplay Pattern"
   homepage "https://svetzal.github.io/epilogue-tracker/"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/svetzal/epilogue-tracker/releases/download/v#{version}/et-darwin-arm64"
-      sha256 "a3a9a0c25827507882c08e96949b02c335de573ac19f19c2ad042e14ffcfbb1b"
+      sha256 "cf1a7e92a235e7501e2aae332e68d000faa161bd4b05d19886d9d4b14bca930b"
 
       def install
         bin.install "et-darwin-arm64" => "et"
@@ -19,7 +19,7 @@ class EpilogueTracker < Formula
 
     on_intel do
       url "https://github.com/svetzal/epilogue-tracker/releases/download/v#{version}/et-darwin-x64"
-      sha256 "ecf8a19ae44afbe1b6b6bea3ad79d01090b05c33f5607072ffa5a77f594d04b7"
+      sha256 "3f70440785fefb3cf1914aee52646d9e5d4a2b12fae0a91debb1d69cda82464a"
 
       def install
         bin.install "et-darwin-x64" => "et"
@@ -30,7 +30,7 @@ class EpilogueTracker < Formula
   on_linux do
     on_intel do
       url "https://github.com/svetzal/epilogue-tracker/releases/download/v#{version}/et-linux-x64"
-      sha256 "1949aa67be90b75956f2604fbe9dfcebdf14a2d3ae17969aef66f69f6b4975ce"
+      sha256 "c69f810e8141bd37b4341f5d3ee7ac16ea5fe40833c1002ca165cf2617e220a8"
 
       def install
         bin.install "et-linux-x64" => "et"
