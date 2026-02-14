@@ -10,7 +10,7 @@ class EpilogueTracker < Formula
   on_macos do
     on_arm do
       url "https://s3.ca-central-1.amazonaws.com/epiloguetracker.ca-cli/v#{version}/et-darwin-arm64.tar.gz"
-      sha256 "4d4e341d0e6aba5081c911d936853b330beb3092e2bb39e8322ab1e7abba1390"
+      sha256 "0e40091b9ede4089dc1016d4911c1c8f22fcb25c7f79da7905c2a12c30b747c5"
 
       def install
         bin.install "et-darwin-arm64" => "et"
@@ -19,7 +19,7 @@ class EpilogueTracker < Formula
 
     on_intel do
       url "https://s3.ca-central-1.amazonaws.com/epiloguetracker.ca-cli/v#{version}/et-darwin-x64.tar.gz"
-      sha256 "e976be6f0b0593ec3344bb5c99c1ea5cdafe4e3e81c5866146574461ca76fff5"
+      sha256 "490a69b101e5b21d914aa9e19befad8793d58cac610b35da6130cea810546e11"
 
       def install
         bin.install "et-darwin-x64" => "et"
@@ -30,7 +30,7 @@ class EpilogueTracker < Formula
   on_linux do
     on_intel do
       url "https://s3.ca-central-1.amazonaws.com/epiloguetracker.ca-cli/v#{version}/et-linux-x64.tar.gz"
-      sha256 "8438415a8565956e36c7ff7a618ac9a64ec347089d5c8497104bf80c4b3d40e0"
+      sha256 "932c08659e52891921108e2275da27e726c6875f42425f246d278fe8ceb996b1"
 
       def install
         bin.install "et-linux-x64" => "et"
