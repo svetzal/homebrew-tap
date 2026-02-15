@@ -4,13 +4,13 @@
 class Hopper < Formula
   desc "Personal work queue CLI with LLM-generated titles"
   homepage "https://github.com/svetzal/hopper"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/svetzal/hopper/releases/download/v#{version}/hopper-darwin-arm64.tar.gz"
-      sha256 "1edce9a5d5ee0a5fae523770bdf1b8f871477add6ebe4718574af17c1247aaea"
+      sha256 "7c2372c0ad2666c54521004c47f484c7ecb7bcab5454ba273be1f2ea8741e2e8"
 
       def install
         bin.install "hopper-darwin-arm64" => "hopper"
@@ -19,7 +19,7 @@ class Hopper < Formula
 
     on_intel do
       url "https://github.com/svetzal/hopper/releases/download/v#{version}/hopper-darwin-x64.tar.gz"
-      sha256 "41f32e8c46858d8f34f51379a6434a70afb60cd35e9312fc95119fc698aaaef5"
+      sha256 "8c180f71d6aa204882e332ae70d81c8184855dfb5acb82ec0e8f60ffb844458c"
 
       def install
         bin.install "hopper-darwin-x64" => "hopper"
@@ -30,7 +30,7 @@ class Hopper < Formula
   on_linux do
     on_intel do
       url "https://github.com/svetzal/hopper/releases/download/v#{version}/hopper-linux-x64.tar.gz"
-      sha256 "b6f4194fc0db461e6c0e80cd5ddc5451946772f9618e85a21bceb944ce90009e"
+      sha256 "e475c3a1071913a20c83fe001f3f9d70de6955a0c2d5fe9cfd7c624a934eb306"
 
       def install
         bin.install "hopper-linux-x64" => "hopper"
