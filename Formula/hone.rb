@@ -4,13 +4,13 @@
 class Hone < Formula
   desc "Iterative codebase quality improvement CLI using Claude agents"
   homepage "https://github.com/svetzal/hone-cli"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/svetzal/hone-cli/releases/download/v1.1.0/hone-darwin-arm64.tar.gz"
-      sha256 "4df456bf800f3b91c305e8c0a531b3d9f5798c951c5171adcdb1993ca6afa74c"
+      url "https://github.com/svetzal/hone-cli/releases/download/v1.1.1/hone-darwin-arm64.tar.gz"
+      sha256 "a470bf8fad13f0cacb138397220e318b5d4449b1600b1784641db2f3786c5c25"
 
       def install
         bin.install "hone-darwin-arm64" => "hone"
@@ -18,8 +18,8 @@ class Hone < Formula
     end
 
     on_intel do
-      url "https://github.com/svetzal/hone-cli/releases/download/v1.1.0/hone-darwin-x64.tar.gz"
-      sha256 "1a32d3b141228fc751d651106559f4232bcd44d5cdab1cb57881461468c9b87f"
+      url "https://github.com/svetzal/hone-cli/releases/download/v1.1.1/hone-darwin-x64.tar.gz"
+      sha256 "f010a9ba9712d82e81b5bad92708df7b4c8e9bf14bafeb0b02d9cb1a9501f125"
 
       def install
         bin.install "hone-darwin-x64" => "hone"
@@ -29,8 +29,8 @@ class Hone < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/svetzal/hone-cli/releases/download/v1.1.0/hone-linux-x64.tar.gz"
-      sha256 "b9a8825c84d42946248c7c6ebd2a9bd2e8a1c69e306a3daf0df94e2a26baaf80"
+      url "https://github.com/svetzal/hone-cli/releases/download/v1.1.1/hone-linux-x64.tar.gz"
+      sha256 "6f74a4ccbd4973e640753ef8edf3d576ccfb653a4ba25f2baa00d3c29ec6b5c6"
 
       def install
         bin.install "hone-linux-x64" => "hone"
