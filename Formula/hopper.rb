@@ -10,7 +10,7 @@ class Hopper < Formula
   on_macos do
     on_arm do
       url "https://github.com/svetzal/hopper/releases/download/v#{version}/hopper-darwin-arm64.tar.gz"
-      sha256 "943c96b08c4ccd52b9f887781ba5a5e23fa240afee2d7485be62f1c6aa382b70"
+      sha256 "77d19d00a77918a13eec4b986b339a2d9920463d8db98318d394f39699d7b1ca"
 
       def install
         bin.install "hopper-darwin-arm64" => "hopper"
@@ -19,7 +19,7 @@ class Hopper < Formula
 
     on_intel do
       url "https://github.com/svetzal/hopper/releases/download/v#{version}/hopper-darwin-x64.tar.gz"
-      sha256 "519f9b503d6f998114d718c6ed4a7a57c0514ebd531884e019e16125d78983ff"
+      sha256 "4f083a6c7da7637e630c40bea425537ea3d1b9e16e18f04a2860c6704d52834d"
 
       def install
         bin.install "hopper-darwin-x64" => "hopper"
@@ -30,7 +30,7 @@ class Hopper < Formula
   on_linux do
     on_intel do
       url "https://github.com/svetzal/hopper/releases/download/v#{version}/hopper-linux-x64.tar.gz"
-      sha256 "affc799822b6ba4ae07954d9ca3a25eda48dd5cd58441e0ccabf59b6079ac59f"
+      sha256 "87a453040102a2b1212896a6593e026364b6134f8525a300b2a879c7666533ab"
 
       def install
         bin.install "hopper-linux-x64" => "hopper"
