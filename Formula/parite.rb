@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-class PariteCli < Formula
+class Parite < Formula
   desc "NNTP/Usenet client and NZB search tool with media library management"
   homepage "https://github.com/svetzal/parite-cli"
   version "0.2.0"
