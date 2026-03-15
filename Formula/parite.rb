@@ -4,13 +4,13 @@
 class Parite < Formula
   desc "NNTP/Usenet client and NZB search tool with media library management"
   homepage "https://github.com/svetzal/parite-cli"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://s3.ca-central-1.amazonaws.com/parite-releases/v0.5.0/parite-darwin-arm64.tar.gz"
-      sha256 "2676f1401820cc3df565236805652df54b63a1662f478ba86bfec1f35f1b6b7a"
+      url "https://s3.ca-central-1.amazonaws.com/parite-releases/v0.6.0/parite-darwin-arm64.tar.gz"
+      sha256 "4fe0ef48445dc9ec0533aa08d57a4aac1bdaecfe94e76fcc27b791c98f7ff16b"
 
       def install
         bin.install "parite"
@@ -19,8 +19,8 @@ class Parite < Formula
     end
 
     on_intel do
-      url "https://s3.ca-central-1.amazonaws.com/parite-releases/v0.5.0/parite-darwin-x64.tar.gz"
-      sha256 "20d8644a75a23c20a770d51f263c7ef8d50642e0e8af107e83f41490ef495f03"
+      url "https://s3.ca-central-1.amazonaws.com/parite-releases/v0.6.0/parite-darwin-x64.tar.gz"
+      sha256 "b3644d7e6451ac8b3c8978091499ff888d48228e9faa6f01f7c17375dc1111cd"
 
       def install
         bin.install "parite"
@@ -31,8 +31,8 @@ class Parite < Formula
 
   on_linux do
     on_intel do
-      url "https://s3.ca-central-1.amazonaws.com/parite-releases/v0.5.0/parite-linux-x64.tar.gz"
-      sha256 "fb05dfacbe5c3e4c173d0caba3d1058e35b7fa53b3b2cfbe01c057707f92cd2e"
+      url "https://s3.ca-central-1.amazonaws.com/parite-releases/v0.6.0/parite-linux-x64.tar.gz"
+      sha256 "87fa1d09b3637ac73702a74d741d03599fda57fcccbebbb7f4e02e437a3e3b0e"
 
       def install
         bin.install "parite"
