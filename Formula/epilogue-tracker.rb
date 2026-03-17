@@ -4,13 +4,13 @@
 class EpilogueTracker < Formula
   desc "User-centric work management CLI using the Screenplay Pattern"
   homepage "https://epiloguetracker.ca/"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://s3.ca-central-1.amazonaws.com/epiloguetracker.ca-cli/v#{version}/et-darwin-arm64.tar.gz"
-      sha256 "373d40c948e114009ae379e14a176d60a8b3e17d77cb09a9ee3726ac872b918a"
+      sha256 "00e04d182f43e07d3360d753d893f57d767e32aba84ef88538bf5f2ab7aad434"
 
       def install
         bin.install "et-darwin-arm64" => "et"
@@ -19,7 +19,7 @@ class EpilogueTracker < Formula
 
     on_intel do
       url "https://s3.ca-central-1.amazonaws.com/epiloguetracker.ca-cli/v#{version}/et-darwin-x64.tar.gz"
-      sha256 "b0b6698ff112cbb77e46933a56392a3d93f2c963c0d6b2c689943e426dacc4b4"
+      sha256 "9f0036596ffdac242de45afe29e1d6a89bcbf2c5d82e7ec7b073ba42a4b7dce8"
 
       def install
         bin.install "et-darwin-x64" => "et"
@@ -30,7 +30,7 @@ class EpilogueTracker < Formula
   on_linux do
     on_intel do
       url "https://s3.ca-central-1.amazonaws.com/epiloguetracker.ca-cli/v#{version}/et-linux-x64.tar.gz"
-      sha256 "222d96a2f99ed0bb356c906fc14753e85dcdc381ffe6c1f68710d95fafc28808"
+      sha256 "744881859fd49bbf635991d3d31fec3ef25629395467d477f186ef067caf9caf"
 
       def install
         bin.install "et-linux-x64" => "et"
