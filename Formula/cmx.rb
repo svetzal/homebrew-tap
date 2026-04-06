@@ -10,7 +10,7 @@ class Cmx < Formula
   on_macos do
     on_arm do
       url "https://github.com/svetzal/context-mixer2/releases/download/v2.5.0/cmx-darwin-arm64.tar.gz"
-      sha256 "9264f9c367f622375f744bbd697d299b89acce9be07db8a241879a148c94c731"
+      sha256 "4a76e9d43adcbba948a3de5df513781fba6c3f6d8c05e8cedf62af755142312a"
 
       def install
         bin.install "cmx"
@@ -20,7 +20,7 @@ class Cmx < Formula
 
     on_intel do
       url "https://github.com/svetzal/context-mixer2/releases/download/v2.5.0/cmx-darwin-x64.tar.gz"
-      sha256 "c43fa8197722f77bd7d6ba4664cc76302badeaa2e85b585add06c3a13fd4d341"
+      sha256 "dcf22fc5677eae555f51562c3bb48fddbf3fbb02a1bf9d095d77e029a743b4ed"
 
       def install
         bin.install "cmx"
@@ -32,7 +32,7 @@ class Cmx < Formula
   on_linux do
     on_intel do
       url "https://github.com/svetzal/context-mixer2/releases/download/v2.5.0/cmx-linux-x64.tar.gz"
-      sha256 "4d7d35ceca1141963badb2bccf85bbb83e8c7d6868747fa3355232f7f38eae6e"
+      sha256 "d2e84c479c2a4c47f8c159646605395ccc2e024e8ca13e7a967f8488eb4b0a39"
 
       def install
         bin.install "cmx"
