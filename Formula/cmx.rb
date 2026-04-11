@@ -4,13 +4,13 @@
 class Cmx < Formula
   desc "Package manager and publisher for curated agentic context — agents, skills, and plugins"
   homepage "https://github.com/svetzal/context-mixer2"
-  version "2.5.2"
+  version "2.5.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/svetzal/context-mixer2/releases/download/v2.5.2/cmx-darwin-arm64.tar.gz"
-      sha256 "105c822a75b00b1139f83210d13dea899d129956000dba8a2c61c7c20b029585"
+      url "https://github.com/svetzal/context-mixer2/releases/download/v2.5.3/cmx-darwin-arm64.tar.gz"
+      sha256 "e21408475df08a66e8af06fafbaf7c7cc09ff771777a102a9eb354d16dbcf78d"
 
       def install
         bin.install "cmx"
@@ -19,8 +19,8 @@ class Cmx < Formula
     end
 
     on_intel do
-      url "https://github.com/svetzal/context-mixer2/releases/download/v2.5.2/cmx-darwin-x64.tar.gz"
-      sha256 "37bd11515cb185cff956cb348fa5c3ed39b7d55b937af5422362dd562154d8ba"
+      url "https://github.com/svetzal/context-mixer2/releases/download/v2.5.3/cmx-darwin-x64.tar.gz"
+      sha256 "1e2e37c85fcb40585e61b705bef8f3648874e9266652b190611da65476212164"
 
       def install
         bin.install "cmx"
@@ -31,8 +31,8 @@ class Cmx < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/svetzal/context-mixer2/releases/download/v2.5.2/cmx-linux-x64.tar.gz"
-      sha256 "50a98231cbc3a4e4f67f9f3e17136dcabc4e99773d5fcb30016e80adbb2e4374"
+      url "https://github.com/svetzal/context-mixer2/releases/download/v2.5.3/cmx-linux-x64.tar.gz"
+      sha256 "76fdd8b7749af90fc8d3ecfda779ef14deccfa59013bdcac17c071a8bb534143"
 
       def install
         bin.install "cmx"
