@@ -4,24 +4,28 @@
 class Hone < Formula
   desc "Iterative codebase quality improvement CLI using Claude agents"
   homepage "https://github.com/svetzal/hone-cli"
-  version "2.0.0"
+  version "2.0.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/svetzal/hone-cli/releases/download/v2.0.0/hone-darwin-arm64.tar.gz"
-      sha256 "7161e73e7d96b39da76160d5aab1f0c916c41ba991d2d10b247c3a90f8d945c3"
+      url "https://github.com/svetzal/hone-cli/releases/download/v2.0.1/hone-darwin-arm64.tar.gz"
+      sha256 "5d8cbfdfb16221502fb266b166c89592a8fe6dafdbe728d4f07abf3c353cb4ae"
 
       def install
+        system "codesign", "--remove-signature", "hone-darwin-arm64"
+        system "codesign", "--sign", "-", "--force", "hone-darwin-arm64"
         bin.install "hone-darwin-arm64" => "hone"
       end
     end
 
     on_intel do
-      url "https://github.com/svetzal/hone-cli/releases/download/v2.0.0/hone-darwin-x64.tar.gz"
-      sha256 "33dd3717a6793067e84099150496a623269fa9bfff4c049206decf5765cb36bd"
+      url "https://github.com/svetzal/hone-cli/releases/download/v2.0.1/hone-darwin-x64.tar.gz"
+      sha256 "12be1a47dd6fce8daaafd38da07d18ba761c1afcc82d8ab0855a1b230b8b3079"
 
       def install
+        system "codesign", "--remove-signature", "hone-darwin-x64"
+        system "codesign", "--sign", "-", "--force", "hone-darwin-x64"
         bin.install "hone-darwin-x64" => "hone"
       end
     end
@@ -29,8 +33,8 @@ class Hone < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/svetzal/hone-cli/releases/download/v2.0.0/hone-linux-x64.tar.gz"
-      sha256 "33931c1e36e7ec0fbb466b8b52a82bda9f599c76698f016b905ba1626c170472"
+      url "https://github.com/svetzal/hone-cli/releases/download/v2.0.1/hone-linux-x64.tar.gz"
+      sha256 "6b75c33974817a827093b2ce26376a1a5f6a6369fc10e466ecf90880fc812c71"
 
       def install
         bin.install "hone-linux-x64" => "hone"
