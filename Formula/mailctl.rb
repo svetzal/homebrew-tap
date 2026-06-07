@@ -4,13 +4,13 @@
 class Mailctl < Formula
   desc "Personal email operations CLI — search, read, receipts, inbox management"
   homepage "https://github.com/svetzal/mailctl-cli"
-  version "1.0.3"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/svetzal/mailctl-cli/releases/download/v#{version}/mailctl-darwin-arm64.tar.gz"
-      sha256 "664a547cb034f60aaef4744384c343ee8798ec62ae2a51ceade9db4b94d3ad08"
+      sha256 "e1bf3f903bb693c2a706a8886686e41c0128240c1b33b4e3d1cc7752d2168a45"
 
       def install
         bin.install "mailctl-darwin-arm64" => "mailctl"
@@ -19,7 +19,7 @@ class Mailctl < Formula
 
     on_intel do
       url "https://github.com/svetzal/mailctl-cli/releases/download/v#{version}/mailctl-darwin-x64.tar.gz"
-      sha256 "26944eb75096b5947c2c0d4345cd9cc9fc0c15e13684201427f2f3e03a024017"
+      sha256 "77cdad2bed0ae16d982e77b001ed5fef12adca2d15909f62b70e66d37bf40da9"
 
       def install
         bin.install "mailctl-darwin-x64" => "mailctl"
@@ -30,7 +30,7 @@ class Mailctl < Formula
   on_linux do
     on_intel do
       url "https://github.com/svetzal/mailctl-cli/releases/download/v#{version}/mailctl-linux-x64.tar.gz"
-      sha256 "49630860f949a0664665769509432c6ad0a840da1239dd2a88a2b555725928eb"
+      sha256 "60a339bc33d84b32b761c07e8bf1ac38063d7e83d48c876d6456622518569e96"
 
       def install
         bin.install "mailctl-linux-x64" => "mailctl"
