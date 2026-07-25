@@ -4,13 +4,13 @@
 class Foundry < Formula
   desc "Event-driven workflow engine for engineering automation"
   homepage "https://github.com/svetzal/foundry"
-  version "0.34.3"
+  version "0.35.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/svetzal/foundry/releases/download/v0.34.3/foundry-darwin-arm64.tar.gz"
-      sha256 "6a38667df42bc14aae27ba50e310c2fffecb6eec1c95b2670a2d392738587934"
+      url "https://github.com/svetzal/foundry/releases/download/v0.35.0/foundry-darwin-arm64.tar.gz"
+      sha256 "13d6a7f26117290d294cebe73b7f99cc6ce39c70f586b97f601afeab62821f17"
 
       def install
         bin.install "foundry"
@@ -19,8 +19,8 @@ class Foundry < Formula
     end
 
     on_intel do
-      url "https://github.com/svetzal/foundry/releases/download/v0.34.3/foundry-darwin-x64.tar.gz"
-      sha256 "3f5e9357fea134865cb2a80b03bf0d5bbb7217de864b09330f6dbdf06ebb7fad"
+      url "https://github.com/svetzal/foundry/releases/download/v0.35.0/foundry-darwin-x64.tar.gz"
+      sha256 "758a145d3e7af45b374841d03c387b2dcb94e9c5d5ef8531dbeed4b4aaac1f36"
 
       def install
         bin.install "foundry"
@@ -31,8 +31,8 @@ class Foundry < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/svetzal/foundry/releases/download/v0.34.3/foundry-linux-x64.tar.gz"
-      sha256 "b3f8fb5d99abc4d5e56b60cae8fe049ac8059de9c40cd6e9bf6fcaedb5ac39a7"
+      url "https://github.com/svetzal/foundry/releases/download/v0.35.0/foundry-linux-x64.tar.gz"
+      sha256 "3dc5ac5ff249ff108f7738f312895ef7cf91688ce491e4d063abc188c22255df"
 
       def install
         bin.install "foundry"
