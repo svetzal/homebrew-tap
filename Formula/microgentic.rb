@@ -10,13 +10,13 @@ class Microgentic < Formula
     depends_on macos: :sequoia
 
     on_arm do
-      url "https://github.com/svetzal/microgentic/releases/download/v0.3.0/microgentic-darwin-arm64.tar.gz"
-      sha256 "9d481c03c2320266b5e1e397dff3276f1e5ab039d2e42ed711f0fcb680780788"
+      url "https://github.com/svetzal/microgentic/releases/download/v0.4.0/microgentic-darwin-arm64.tar.gz"
+      sha256 "7941f4c0ec05d89a85ca6900de881150bd835fc4c69f7ef0e7afa284fd9bf7f5"
     end
 
     on_intel do
-      url "https://github.com/svetzal/microgentic/releases/download/v0.3.0/microgentic-darwin-x64.tar.gz"
-      sha256 "e15879adb4670db38fa12309475c07774a88091517e2e5071de1e379974ff633"
+      url "https://github.com/svetzal/microgentic/releases/download/v0.4.0/microgentic-darwin-x64.tar.gz"
+      sha256 "3af4284aee0f335fc800b834153ca50906d2a3038491293611e199d397433c1d"
     end
   end
 
@@ -24,8 +24,8 @@ class Microgentic < Formula
     depends_on arch: :x86_64
 
     on_intel do
-      url "https://github.com/svetzal/microgentic/releases/download/v0.3.0/microgentic-linux-x64.tar.gz"
-      sha256 "356754bd816333b12bb042372eee4b109c1aba662d2d15d9f121a6c5c618c1f8"
+      url "https://github.com/svetzal/microgentic/releases/download/v0.4.0/microgentic-linux-x64.tar.gz"
+      sha256 "d3d8a731b4942d8b6c540efb9779241fbb0d4d7249bfa0d919207794a6e67118"
     end
   end
 
